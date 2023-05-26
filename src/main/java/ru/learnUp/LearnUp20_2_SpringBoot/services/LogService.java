@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class LogService {
-	private final Logger logger;  //таких логгеров у нас 2(ConsoleLogger и FileLogger), будет ошибка выбора
+	private final Logger logger;
 
 	public LogService(Logger logger) {
 		this.logger = logger;
