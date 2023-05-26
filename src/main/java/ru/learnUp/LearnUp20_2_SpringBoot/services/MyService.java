@@ -1,17 +1,22 @@
 package ru.learnUp.LearnUp20_2_SpringBoot.services;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+
+@Service
 @Slf4j
 public class MyService {
 
-	private final Logger logger;
+	private final List<Logger> loggers;
 
-	public MyService(Logger logger) {
-		this.logger = logger;
+	public MyService(List<Logger> loggers) {
+		this.loggers = loggers;
 	}
 
+
 	public void doWork() {
-		log.info("I'm working");
+		loggers.forEach(l -> l.log("I'm working"));
 	}
 }
