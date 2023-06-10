@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ru.learnUp</groupId>
-	<artifactId>LearnUp20_2_SpringBoot</artifactId>
+	<artifactId>LearnUp20_2_SpringBootand21_2_AOP</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>LearnUp20_2_SpringBoot</name>
 	<description>Demo project for Spring Boot</description>
@@ -31,6 +31,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 	</dependencies>
 
